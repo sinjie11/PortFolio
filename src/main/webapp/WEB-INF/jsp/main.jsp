@@ -4,10 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+
 <title>MAIN PAGE</title>
 </head>
+
 <body>
-    <h1>THIS IS TEST PAGE</h1>
+    <h1>SpringBoot Test Page</h1>
+    <form id="targetForm" name="targetForm" method="post" action="/dbTest">
+    </form>
+    <button type="submit" form="targetForm" style="border: 10px;background-color: lime;">
+    	DB테스트 페이지로 이동
+    </button>
 </body>
+
 </html>

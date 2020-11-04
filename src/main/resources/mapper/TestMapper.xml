@@ -4,7 +4,8 @@
 
     <select id="selectUserList" resultType="com.main.portFolio.vo.TestVO">
         SELECT 
-        	* 
+        	ID AS id
+        	, NM AS nm
         FROM 
         	TB_USER
     </select>

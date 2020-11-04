@@ -39,7 +39,7 @@ public class DBConfig {
 		sessionFactory.setDataSource(dataSource);
 		
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-		sessionFactory.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
+		sessionFactory.setMapperLocations(resolver.getResources("classpath:mapper/**/*.xml"));
 		
 		return sessionFactory.getObject();
 	}
